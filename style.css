@@ -152,9 +152,11 @@ ul li a:hover {
   font-size: 24px;
 }
 
-
-#social-links a:hover {
+#social-links ion-icon:hover {
   background: var(--highlight-color);
+  padding: 8px;
+  border-radius: 50%;
+  
 }
 
 footer {
@@ -165,10 +167,10 @@ footer {
 /* media queries*/
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets.bg-desktop.jpg);
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
   .light {
-    --bg-url: url(./assets.bg-desktop-ligth.jpg);
+    --bg-url: url(./assets/bg-desktop-ligth.jpg);
   }
 }
 
