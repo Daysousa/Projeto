@@ -147,10 +147,18 @@ ul li a:hover {
 #social-links {
   display: flex;
   justify-content: center;
-  gap: 32px;
-  padding: 24px 0px;
+  gap: 16px;
+  padding: 16px 0px;
   font-size: 24px;
+  
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
 }
+
 
 #social-links ion-icon:hover {
   background: var(--highlight-color);
@@ -160,7 +168,7 @@ ul li a:hover {
 }
 
 footer {
-  padding: 24px 0;
+  padding: 70px 0;
   text-align: center;
   font-size: 14px;
 }
@@ -172,8 +180,13 @@ footer {
   .light {
     --bg-url: url(./assets/bg-desktop-ligth.jpg);
   }
+  
+  }
+@media (max-width: 768px) {
+  #social-links{
+    font-size: 16px;
+  }
 }
-
 /* animation*/
 @keyframes slide-in {
   from {
